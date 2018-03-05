@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li{
+	display: inline-block;
+}
+
+.btn_grp button{
+	padding: 12px 24px;
+	background-color: #4caf50;
+	border: 1px solid green;
+	color: #fff;
+	float: left;
+	cursor: pointer;
+}
+
+.btn_grp button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+.btn_grp::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn_grp button:hover {
+    background-color: #3e8e41;
+}
